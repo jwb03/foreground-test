@@ -1,0 +1,7 @@
+{
+    "java.configuration.updateBuildConfiguration": "interactive",
+    "java.project.sourcePaths": [
+        "src/main/java/com/donghaeng/withme/controlcommand",
+        "src/test/java"
+    ]
+}

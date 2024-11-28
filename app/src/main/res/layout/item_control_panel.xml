@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_background"
+    android:orientation="vertical"
+    android:layout_marginBottom="10dp"
+    android:padding="16dp">
+
+    <!-- ToDo 여기서 동행인 클릭 시 나오는 제어 판넬 디자인 수정하면 됨. -->
+    <!-- 소리 모드 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="5dp">
+
+        <TextView
+            style="@style/app_one_line_text"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:autoSizeMaxTextSize="18sp"
+            android:text="@string/sound_mode_setting"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/callButton"
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_button"
+                android:contentDescription="@string/control_call"
+                android:src="@drawable/ic_call" />
+
+            <ImageButton
+                android:id="@+id/notificationButton"
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_button"
+                android:backgroundTint="#5EFD897F"
+                android:contentDescription="@string/control_notification"
+                android:minWidth="48dp"
+                android:minHeight="48dp"
+                android:padding="12dp"
+                android:src="@drawable/ic_notification" />
+
+            <!-- TODO: 벨소리 모드 세번째 아이콘이 무음모드인가 -->
+            <ImageButton
+                android:id="@+id/soundButton"
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_button"
+                android:backgroundTint="#5EFD897F"
+                android:contentDescription="@string/control_sound"
+                android:minWidth="48dp"
+                android:minHeight="48dp"
+                android:padding="12dp"
+                android:src="@drawable/ic_volume" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="10dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/current_sound_text"
+                    style="@style/app_one_line_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autoSizeMaxTextSize="18sp"
+                    android:gravity="center"
+                    android:text="@string/current_sound"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/current_sound_percent"
+                        style="@style/app_one_line_text"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:autoSizeMaxTextSize="18sp"
+                        android:gravity="end"
+                        android:paddingEnd="0dp"
+                        android:text="0"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/percent1"
+                        style="@style/app_one_line_text"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:autoSizeMaxTextSize="18sp"
+                        android:gravity="start"
+                        android:paddingStart="0dp"
+                        android:text="%"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/ic_long_arrow_right" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/change_sound_text"
+                    style="@style/app_one_line_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autoSizeMaxTextSize="18sp"
+                    android:gravity="center"
+                    android:text="@string/change_sound"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/change_sound_percent"
+                        style="@style/app_one_line_text"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:autoSizeMaxTextSize="18sp"
+                        android:gravity="end"
+                        android:paddingEnd="0dp"
+                        android:text="0"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/percent2"
+                        style="@style/app_one_line_text"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:autoSizeMaxTextSize="18sp"
+                        android:gravity="start"
+                        android:paddingStart="0dp"
+                        android:text="%"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/mute_button"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/rounded_button"
+                android:contentDescription="@string/control_sound_mute"
+                app:srcCompat="@drawable/ic_volume_mute" />
+
+            <SeekBar
+                android:id="@+id/sound_seekbar"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:progressDrawable="@drawable/custom_progressbar"
+                android:thumb="@drawable/seekbar_thumb"
+                android:max="100"
+                android:min="0" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <!-- 구분선 -->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#929292"
+        android:layout_marginVertical="10dp"/>
+
+    <!-- 화면 밝기 조절 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:text="@string/screen_brightness_setting"
+            style="@style/app_one_line_text"
+            android:autoSizeMaxTextSize="18sp"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="10dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/current_light_text"
+                    style="@style/app_one_line_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autoSizeMaxTextSize="18sp"
+                    android:gravity="center"
+                    android:text="@string/current_light"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/current_light_percent"
+                    style="@style/app_one_line_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:autoSizeMaxTextSize="18sp"
+                    android:gravity="center"
+                    android:paddingEnd="0dp"
+                    android:text="0"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/ic_long_arrow_right" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/change_light_text"
+                    style="@style/app_one_line_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autoSizeMaxTextSize="18sp"
+                    android:gravity="center"
+                    android:text="@string/change_light"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/change_light_percent"
+                    style="@style/app_one_line_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:autoSizeMaxTextSize="18sp"
+                    android:gravity="center"
+                    android:paddingEnd="0dp"
+                    android:text="0"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/auto_light"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/rounded_button"
+                android:contentDescription="@string/control_light_mode"
+                app:srcCompat="@drawable/ic_light_mode" />
+
+            <SeekBar
+                android:id="@+id/light_seekbar"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:progressDrawable="@drawable/custom_progressbar"
+                android:thumb="@drawable/seekbar_thumb"
+                android:max="100"
+                android:min="0" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- 구분선 -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#929292"
+        android:layout_marginVertical="10dp"/>
+
+    <!-- 조절 컨트롤들 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:padding="8dp"
+            android:text="@string/control_set_notification"
+            style="@style/app_one_line_text"
+            android:autoSizeMaxTextSize="18sp"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <!-- 시간 선택 -->
+                <NumberPicker
+                    android:id="@+id/hourPicker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:theme="@style/NumberPickerStyle"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textSize="20sp"
+                    android:layout_marginHorizontal="8dp"/>
+
+                <!-- 분 선택 -->
+                <NumberPicker
+                    android:id="@+id/minutePicker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:theme="@style/NumberPickerStyle"/>
+
+                <Button
+                    android:id="@+id/setAlarmButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:background="@drawable/rounded_button"
+                    app:backgroundTint="#FF8A80"
+                    android:textColor="@color/black"
+                    style="@style/app_one_line_text"
+                    android:textSize="18sp"
+                    android:autoSizeMaxTextSize="18sp"
+                    android:text="@string/control_set_btn" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

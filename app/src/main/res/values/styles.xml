@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- App Font -->
+    <style name="app_common_text">
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingStart">5dp</item>
+        <item name="android:paddingEnd">5dp</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:fontFamily">@font/tmoney_round_wind_regular</item>
+    </style>
+    <!-- autoSizeMaxTextSize 꼭 설정하기 (최대 텍스트 크기) -->
+    <!-- TextSize 도 설정 -->
+    <style name="app_one_line_text">
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingStart">5dp</item>
+        <item name="android:paddingEnd">5dp</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:maxLines">1</item>              <!-- 최대 1줄로 제한 -->
+        <item name="android:ellipsize">end</item>          <!-- 넘어가는 텍스트는 ...으로 표시 -->
+        <item name="autoSizeTextType">uniform</item>             <!-- 자동 크기 조절 활성화 -->
+        <item name="autoSizeMinTextSize">12sp</item>            <!-- 최소 텍스트 크기 -->
+        <item name="autoSizeStepGranularity">2sp</item>         <!-- 크기 조절 단계 -->
+        <item name="android:fontFamily">@font/tmoney_round_wind_regular</item>
+    </style>
+
+    <style name="app_main_24sp_text">
+        <item name="android:textSize">24sp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingStart">5dp</item>
+        <item name="android:paddingEnd">5dp</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:maxLines">1</item>              <!-- 최대 1줄로 제한 -->
+        <item name="android:ellipsize">end</item>          <!-- 넘어가는 텍스트는 ...으로 표시 -->
+        <item name="autoSizeTextType">uniform</item>             <!-- 자동 크기 조절 활성화 -->
+        <item name="autoSizeMinTextSize">12sp</item>            <!-- 최소 텍스트 크기 -->
+        <item name="autoSizeMaxTextSize">24sp</item>            <!-- 최대 텍스트 크기 -->
+        <item name="autoSizeStepGranularity">2sp</item>         <!-- 크기 조절 단계 -->
+        <item name="android:fontFamily">@font/tmoney_round_wind_regular</item>
+    </style>
+
+
+    <!-- Service Main Text -->
+    <style name="service_main_text">
+        <item name="android:textSize">85sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:lineSpacingExtra">4sp</item> <!-- 추가적인 줄 간격 -->
+        <item name="android:lineSpacingMultiplier">1.2</item> <!-- 줄 간격 배율 -->
+        <item name="android:fontFamily">@font/tmoney_round_wind_regular</item>
+    </style>
+
+    <!-- common -->
+    <style name="common_text">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:lineSpacingExtra">4sp</item> <!-- 추가적인 줄 간격 -->
+        <item name="android:lineSpacingMultiplier">1.2</item> <!-- 줄 간격 배율 -->
+        <item name="android:fontFamily">@font/tmoney_round_wind_regular</item>
+    </style>
+
+    <style name="common_warning">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#FE7363</item>
+        <item name="android:lineSpacingExtra">4sp</item> <!-- 추가적인 줄 간격 -->
+        <item name="android:lineSpacingMultiplier">1.2</item> <!-- 줄 간격 배율 -->
+        <item name="android:fontFamily">@font/tmoney_round_wind_regular</item>
+    </style>
+
+    <style name="common_input">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">#CCCCCC</item>
+        <item name="android:lineSpacingExtra">4sp</item> <!-- 추가적인 줄 간격 -->
+        <item name="android:lineSpacingMultiplier">1.2</item> <!-- 줄 간격 배율 -->
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:fontFamily">@font/tmoney_round_wind_regular</item>
+    </style>
+
+    <style name="common_btn">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:lineSpacingExtra">4sp</item> <!-- 추가적인 줄 간격 -->
+        <item name="android:lineSpacingMultiplier">1.2</item> <!-- 줄 간격 배율 -->
+        <item name="android:fontFamily">@font/tmoney_round_wind_regular</item>
+    </style>
+
+    <!-- Start -->
+    <style name="start_text_style_intro">
+        <item name="android:textSize">52sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:lineSpacingExtra">4sp</item> <!-- 추가적인 줄 간격 -->
+        <item name="android:lineSpacingMultiplier">1.2</item> <!-- 줄 간격 배율 -->
+        <item name="android:fontFamily">@font/tmoney_round_wind_regular</item>
+    </style>
+    <style name="start_text_style_intro2">
+        <item name="android:textSize">60sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:lineSpacingExtra">4sp</item> <!-- 추가적인 줄 간격 -->
+        <item name="android:lineSpacingMultiplier">1.2</item> <!-- 줄 간격 배율 -->
+        <item name="android:fontFamily">@font/tmoney_round_wind_regular</item>
+    </style>
+    <style name="start_text_style_main">
+        <item name="android:textSize">32sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:lineSpacingExtra">4sp</item> <!-- 추가적인 줄 간격 -->
+        <item name="android:lineSpacingMultiplier">1.2</item> <!-- 줄 간격 배율 -->
+    </style>
+    <style name="common_btn_v2">
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="colorButtonNormal">#FBCC68</item>
+        <item name="android:lineSpacingExtra">12sp</item> <!-- 줄 간격 추가 -->
+        <item name="android:lineSpacingMultiplier">1.0</item>
+        <item name="android:fontFamily">@font/tmoney_round_wind_regular</item>
+    </style>
+
+    <!-- Login -->
+    <style name="login_text_style_main">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:lineSpacingExtra">4sp</item> <!-- 추가적인 줄 간격 -->
+        <item name="android:lineSpacingMultiplier">1.2</item> <!-- 줄 간격 배율 -->
+        <item name="android:fontFamily">@font/tmoney_round_wind_regular</item>
+    </style>
+
+    <style name="login_text_phone_number">
+        <item name="android:textSize">32sp</item>
+        <item name="android:textColor">#CCCCCC</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingStart">5dp</item>
+        <item name="android:paddingEnd">5dp</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:fontFamily">@font/tmoney_round_wind_regular</item>
+    </style>
+
+    <style name="login_text_password">
+        <item name="android:textSize">32sp</item>
+        <item name="android:textColor">#CCCCCC</item>
+        <item name="android:fontFamily">@font/tmoney_round_wind_regular</item>
+    </style>
+
+    <style name="login_radio_login_history">
+        <item name="android:textColor">#FE7363</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:lineSpacingExtra">12sp</item> <!-- 줄 간격 추가 -->
+        <item name="android:lineSpacingMultiplier">1.0</item>
+        <item name="android:fontFamily">@font/tmoney_round_wind_regular</item>
+        <item name="buttonTint">#FE7363</item>
+    </style>
+
+    <style name="login_go">
+        <item name="android:textSize">15sp</item>
+        <item name="colorButtonNormal">#FE7363</item>
+        <item name="android:lineSpacingExtra">12sp</item> <!-- 줄 간격 추가 -->
+        <item name="android:lineSpacingMultiplier">1.0</item>
+        <item name="android:fontFamily">@font/tmoney_round_wind_regular</item>
+    </style>
+
+    <style name="login_text_set_password">
+        <item name="android:textColor">#5A5A5A</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:lineSpacingExtra">12sp</item> <!-- 줄 간격 추가 -->
+        <item name="android:lineSpacingMultiplier">1.0</item>
+        <item name="android:fontFamily">@font/tmoney_round_wind_regular</item>
+    </style>
+
+    <style name="login_text_find_password">
+        <item name="android:textColor">#5A5A5A</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:lineSpacingExtra">12sp</item> <!-- 줄 간격 추가 -->
+        <item name="android:lineSpacingMultiplier">1.0</item>
+        <item name="android:fontFamily">@font/tmoney_round_wind_regular</item>
+    </style>
+
+    <!-- Signup -->
+    <style name="signup_text">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:lineSpacingExtra">4sp</item> <!-- 추가적인 줄 간격 -->
+        <item name="android:lineSpacingMultiplier">1.2</item> <!-- 줄 간격 배율 -->
+        <item name="android:fontFamily">@font/tmoney_round_wind_regular</item>
+    </style>
+    <!-- Select -->
+    <style name="select_text">
+        <item name="android:textSize">32sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:lineSpacingExtra">4sp</item> <!-- 추가적인 줄 간격 -->
+        <item name="android:lineSpacingMultiplier">1.2</item> <!-- 줄 간격 배율 -->
+    </style>
+
+    <!-- Setting-->
+    <style name="setting_head_text">
+        <item name="android:textSize">40sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/tmoney_round_wind_regular</item>
+    </style>
+    <style name="control_scan_text">
+        <item name="android:textSize">32sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:lineSpacingExtra">4sp</item> <!-- 추가적인 줄 간격 -->
+        <item name="android:lineSpacingMultiplier">1.2</item> <!-- 줄 간격 배율 -->
+    </style>
+
+    <style name="setting_body_text">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/tmoney_round_wind_regular</item>
+    </style>
+
+    <style name="user_name">
+        <item name="android:textSize">50sp</item>
+        <item name="android:fontFamily">@font/tmoney_round_wind_regular</item>
+    </style>
+
+    <!-- Leave -->
+    <style name="leave_alert_text">
+        <item name="android:textSize">30sp</item>
+        <item name="android:fontFamily">@font/tmoney_round_wind_regular</item>
+    </style>
+
+
+    <!-- Navigation -->
+    <style name="BottomNavigationViewStyle" parent="Widget.MaterialComponents.BottomNavigationView">
+        <!-- 아이콘 크기 조절 -->
+        <item name="itemIconSize">42dp</item>
+        <!-- 선택된 메뉴의 텍스트 크기 설정 -->
+        <item name="itemTextAppearanceActive">@style/TextAppearance.BottomNavigationView.Active</item>
+        <!-- 선택되지 않은 메뉴의 텍스트 크기 설정 -->
+        <item name="itemTextAppearanceInactive">@style/TextAppearance.BottomNavigationView.Inactive</item>
+        <!-- 선택되지 않은 아이콘 색상 -->
+        <item name="itemIconTint">@color/icon_color_selector</item>
+        <!-- 선택되지 않은 텍스트 색상 -->
+        <item name="itemTextColor">@color/icon_color_selector</item>
+    </style>
+
+    <!-- 선택된 메뉴 텍스트 스타일 -->
+    <style name="TextAppearance.BottomNavigationView.Active" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/tmoney_round_wind_regular</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <!-- 선택되지 않은 메뉴 텍스트 스타일 -->
+    <style name="TextAppearance.BottomNavigationView.Inactive" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/tmoney_round_wind_regular</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <!-- 체크박스 스타일 -->
+        <!-- 기존 앱 테마 -->
+        <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+            <!-- 앱 전역 설정 -->
+        </style>
+
+        <!-- 체크박스 커스텀 테마 -->
+        <style name="CustomCheckBoxTheme" parent="Theme.MaterialComponents.Light">
+            <item name="colorControlActivated">#FF8A80</item> <!-- 체크 상태 색상 -->
+            <item name="colorControlNormal">#737373</item> <!-- 기본 외곽선 색상 -->
+        </style>
+
+    <!-- control -->
+    <style name="NumberPickerStyle">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColorPrimary">@color/black</item>
+        <item name="android:colorControlNormal">#FF8A80</item>
+    </style>
+</resources>

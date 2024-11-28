@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_start"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFF2">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_marginTop="90dp"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/start_text_intro"
+            style="@style/app_one_line_text"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:autoSizeMaxTextSize="45sp"
+            android:gravity="top"
+            android:text="@string/label_hello_text"
+            android:textSize="45sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/start_text_intro2"
+                style="@style/app_one_line_text"
+                android:layout_width="113dp"
+                android:layout_height="75dp"
+                android:autoSizeMaxTextSize="55sp"
+                android:text="@string/with_me"
+                android:textColor="#FE7363"
+                android:textSize="55sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/start_text_intro3"
+                style="@style/app_one_line_text"
+                android:layout_width="150dp"
+                android:layout_height="68dp"
+                android:autoSizeMaxTextSize="45sp"
+                android:text="@string/label_ending_text"
+                android:textSize="45sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/start_text_main"
+        style="@style/app_one_line_text"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="13dp"
+        android:autoSizeMaxTextSize="42sp"
+        android:gravity="center_horizontal"
+        android:paddingHorizontal="0dp"
+        android:text="@string/start_text_main"
+        android:textSize="42sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+
+    <LinearLayout
+        android:id="@+id/login_button"
+        android:layout_width="match_parent"
+        android:layout_height="145dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/rounded_button"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:paddingHorizontal="50dp"
+        android:paddingVertical="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/start_text_main">
+
+        <TextView
+            style="@style/app_one_line_text"
+            android:layout_width="80dp"
+            android:layout_height="65dp"
+            android:autoSizeMaxTextSize="50sp"
+            android:paddingBottom="0sp"
+            android:text="@string/label_yes_text"
+            android:textColor="#FFFFFF"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+
+        <TextView
+            style="@style/app_one_line_text"
+            android:layout_width="170dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="4dp"
+            android:autoSizeMaxTextSize="24sp"
+            android:text="@string/label_do_text"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/signup_button"
+        android:layout_width="match_parent"
+        android:layout_height="145dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/rounded_button"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:paddingHorizontal="50dp"
+        android:paddingVertical="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_button">
+
+        <TextView
+            style="@style/app_one_line_text"
+            android:layout_width="168dp"
+            android:layout_height="65dp"
+            android:autoSizeMaxTextSize="50sp"
+            android:paddingBottom="0sp"
+            android:text="@string/label_no_text"
+            android:textColor="#FFFFFF"
+
+            android:textSize="50sp"
+            android:textStyle="bold" />
+
+        <TextView
+            style="@style/app_one_line_text"
+            android:layout_width="140dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="1dp"
+            android:autoSizeMaxTextSize="24sp"
+            android:text="@string/label_didnt_text"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
